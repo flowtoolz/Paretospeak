@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B97B14C199A435E007F9538 /* PSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97B14B199A435E007F9538 /* PSModel.swift */; };
+		3BC77B8B1995577F005D2513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8A1995577F005D2513 /* AppDelegate.swift */; };
+		3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8C1995577F005D2513 /* PSMainVC.swift */; };
+		3BC77B921995577F005D2513 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC77B911995577F005D2513 /* Images.xcassets */; };
+		3BC77B9E1995577F005D2513 /* ParetoSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B9D1995577F005D2513 /* ParetoSpeakTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC77B981995577F005D2513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC77B7D1995577F005D2513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC77B841995577F005D2513;
+			remoteInfo = ParetoSpeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B97B14B199A435E007F9538 /* PSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSModel.swift; sourceTree = "<group>"; };
+		3BC77B851995577F005D2513 /* ParetoSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParetoSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC77B891995577F005D2513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC77B8A1995577F005D2513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BC77B8C1995577F005D2513 /* PSMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMainVC.swift; sourceTree = "<group>"; };
+		3BC77B911995577F005D2513 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BC77B971995577F005D2513 /* ParetoSpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParetoSpeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC77B9C1995577F005D2513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC77B9D1995577F005D2513 /* ParetoSpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParetoSpeakTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC77B821995577F005D2513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC77B941995577F005D2513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC77B7C1995577F005D2513 = {
+			isa = PBXGroup;
+			children = (
+				3BC77B871995577F005D2513 /* ParetoSpeak */,
+				3BC77B9A1995577F005D2513 /* ParetoSpeakTests */,
+				3BC77B861995577F005D2513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC77B861995577F005D2513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC77B851995577F005D2513 /* ParetoSpeak.app */,
+				3BC77B971995577F005D2513 /* ParetoSpeakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC77B871995577F005D2513 /* ParetoSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				3BC77B8A1995577F005D2513 /* AppDelegate.swift */,
+				3BC77B8C1995577F005D2513 /* PSMainVC.swift */,
+				3B97B14B199A435E007F9538 /* PSModel.swift */,
+				3BC77B911995577F005D2513 /* Images.xcassets */,
+				3BC77B881995577F005D2513 /* Supporting Files */,
+			);
+			path = ParetoSpeak;
+			sourceTree = "<group>";
+		};
+		3BC77B881995577F005D2513 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BC77B891995577F005D2513 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BC77B9A1995577F005D2513 /* ParetoSpeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC77B9D1995577F005D2513 /* ParetoSpeakTests.swift */,
+				3BC77B9B1995577F005D2513 /* Supporting Files */,
+			);
+			path = ParetoSpeakTests;
+			sourceTree = "<group>";
+		};
+		3BC77B9B1995577F005D2513 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BC77B9C1995577F005D2513 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC77B841995577F005D2513 /* ParetoSpeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC77BA11995577F005D2513 /* Build configuration list for PBXNativeTarget "ParetoSpeak" */;
+			buildPhases = (
+				3BC77B811995577F005D2513 /* Sources */,
+				3BC77B821995577F005D2513 /* Frameworks */,
+				3BC77B831995577F005D2513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParetoSpeak;
+			productName = ParetoSpeak;
+			productReference = 3BC77B851995577F005D2513 /* ParetoSpeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC77B961995577F005D2513 /* ParetoSpeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC77BA41995577F005D2513 /* Build configuration list for PBXNativeTarget "ParetoSpeakTests" */;
+			buildPhases = (
+				3BC77B931995577F005D2513 /* Sources */,
+				3BC77B941995577F005D2513 /* Frameworks */,
+				3BC77B951995577F005D2513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC77B991995577F005D2513 /* PBXTargetDependency */,
+			);
+			name = ParetoSpeakTests;
+			productName = ParetoSpeakTests;
+			productReference = 3BC77B971995577F005D2513 /* ParetoSpeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC77B7D1995577F005D2513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Flowtoolz;
+				TargetAttributes = {
+					3BC77B841995577F005D2513 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3BC77B961995577F005D2513 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3BC77B841995577F005D2513;
+					};
+				};
+			};
+			buildConfigurationList = 3BC77B801995577F005D2513 /* Build configuration list for PBXProject "ParetoSpeak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC77B7C1995577F005D2513;
+			productRefGroup = 3BC77B861995577F005D2513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC77B841995577F005D2513 /* ParetoSpeak */,
+				3BC77B961995577F005D2513 /* ParetoSpeakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC77B831995577F005D2513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC77B921995577F005D2513 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC77B951995577F005D2513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC77B811995577F005D2513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B97B14C199A435E007F9538 /* PSModel.swift in Sources */,
+				3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */,
+				3BC77B8B1995577F005D2513 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC77B931995577F005D2513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC77B9E1995577F005D2513 /* ParetoSpeakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC77B991995577F005D2513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC77B841995577F005D2513 /* ParetoSpeak */;
+			targetProxy = 3BC77B981995577F005D2513 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BC77B9F1995577F005D2513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC77BA01995577F005D2513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC77BA21995577F005D2513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3BC77BA31995577F005D2513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3BC77BA51995577F005D2513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParetoSpeak.app/ParetoSpeak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParetoSpeakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3BC77BA61995577F005D2513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParetoSpeak.app/ParetoSpeak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParetoSpeakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC77B801995577F005D2513 /* Build configuration list for PBXProject "ParetoSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC77B9F1995577F005D2513 /* Debug */,
+				3BC77BA01995577F005D2513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC77BA11995577F005D2513 /* Build configuration list for PBXNativeTarget "ParetoSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC77BA21995577F005D2513 /* Debug */,
+				3BC77BA31995577F005D2513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC77BA41995577F005D2513 /* Build configuration list for PBXNativeTarget "ParetoSpeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC77BA51995577F005D2513 /* Debug */,
+				3BC77BA61995577F005D2513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC77B7D1995577F005D2513 /* Project object */;
+}
