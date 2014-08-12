@@ -6,7 +6,8 @@ class PSModel
     
     var english = PSLanguage(name: "English")
     var portuguese = PSLanguage(name: "Portuguese")
-    var dictionary = [String : PSDictionaryEntry]()
+    var dictionaryEnPt = [String : PSDictionaryEntry]()
+    var dictionaryPtEn = PSDictionary()
     var currentQuestion = ""
     var currentAnswer = ""
     
@@ -14,21 +15,31 @@ class PSModel
     
     func goToNextQuestion()
     {
+        if english.terms.isEmpty || portuguese.terms.isEmpty
+        {
+            println("error: question cannot be selected because of lacking terms")
+            return
+        }
+        
+        currentAnswer = ""
+        
+        // find the next testword with a valid dictionary entry
         struct staticData
         {
             static var nextIndex = 0
         }
         
-        if english.terms.isEmpty
+        var entry: PSDictionaryEntry?
+        
+        while entry == nil
         {
-            println("error: test word cannot be set 'cause no term exists")
-            return
+            var testWord = portuguese.terms[staticData.nextIndex].word
+            entry = dictionaryPtEn.dictionary[testWord]
+            staticData.nextIndex = (staticData.nextIndex + 1) % portuguese.terms.count
         }
-        
-        currentQuestion = english.terms[staticData.nextIndex].word
-        currentAnswer = ""
-        
-        staticData.nextIndex = (staticData.nextIndex + 1) % english.terms.count
+    
+        var index = random() % entry!.translations.count
+        currentQuestion = entry!.translations[index].word
     }
     
     func stringOfCorrectAnswers() -> String
@@ -38,11 +49,11 @@ class PSModel
             return ""
         }
         
-        var entry = dictionary[currentQuestion]
+        var entry = dictionaryEnPt[currentQuestion]
         
         if entry == nil
         {
-            return "error: no dictionary entry"
+            return "error: no dictionary entry for current question"
         }
         
         var translationsString = ""
@@ -54,7 +65,7 @@ class PSModel
                 translationsString += ", "
             }
             
-            translationsString += dictionary[currentQuestion]!.translations[index].word
+            translationsString += dictionaryEnPt[currentQuestion]!.translations[index].word
         }
         
         return translationsString
@@ -63,7 +74,7 @@ class PSModel
     func possibleTranslationsForCurrentAnswer() -> [PSTerm]
     {
         // dictionary entry
-        var entry = dictionary[currentQuestion]
+        var entry = dictionaryEnPt[currentQuestion]
         
         if entry == nil
         {
@@ -71,17 +82,12 @@ class PSModel
             return []
         }
         
-        // find a matching translations
+        // find matching translations
         var matches = [PSTerm]()
         
         for translation in entry!.translations
         {
-            let translationNS = translation.word as NSString
-            let answerNS = currentAnswer as NSString
-            let compareRange = NSRange(location: 0, length: answerNS.length)
-            let translationCompareNS = translationNS.substringWithRange(compareRange)
-            
-            if answerNS.isEqualToString(translationCompareNS)
+            if translation.word.hasPrefix(currentAnswer)
             {
                 matches.append(translation)
             }
@@ -90,9 +96,9 @@ class PSModel
         return matches
     }
     
-    func userAnswerIsComplete() -> Bool
+    func currentAnswerIsCorrect() -> Bool
     {
-        var entry = dictionary[currentQuestion]
+        var entry = dictionaryEnPt[currentQuestion]
         
         if entry == nil
         {
@@ -103,10 +109,44 @@ class PSModel
         return entry!.translationExists(currentAnswer)
     }
     
-    func nextCharacterOptions() -> [String]
+    func allCharacterOptions() -> [Character]
+    {
+        var options = correctCharacterOptions()
+    
+        while options.count > 9
+        {
+            options.removeAtIndex(random() % options.count)
+        }
+        
+        while options.count < 9
+        {
+            var insertIndex = random() % (options.count + 1)
+            options.insert(randomCharacter(withoutCharacters: options), atIndex: insertIndex)
+        }
+        
+        return options
+    }
+    
+    func randomCharacter(withoutCharacters without: [Character]) -> Character
+    {
+        var nsAllCharacters: NSString = "abcdefghijklmnopqrstuvwxyzàáâãéêíòóôõúüç"
+        
+        for char in without
+        {
+            nsAllCharacters =
+                nsAllCharacters.stringByReplacingOccurrencesOfString(String(char),
+                    withString: "")
+        }
+        
+        let allCharacters: String = nsAllCharacters
+        
+        return allCharacters[random() % allCharacters.length()]
+    }
+    
+    func correctCharacterOptions() -> [Character]
     {
         // dictionary entry
-        var entry = dictionary[currentQuestion]
+        var entry = dictionaryEnPt[currentQuestion]
         
         if entry == nil
         {
@@ -115,47 +155,20 @@ class PSModel
         }
         
         // add correct options
-        var options = [String]()
+        var options = [Character]()
         
-        for translation in entry!.translations
+        for translation in possibleTranslationsForCurrentAnswer()
         {
-            // does the answer match this translation?
-            let translationNS = translation.word as NSString
-            let answerNS = currentAnswer as NSString
-            let compareRange = NSRange(location: 0, length: answerNS.length)
-            let translationCompareNS = translationNS.substringWithRange(compareRange)
-            
-            if !answerNS.isEqualToString(translationCompareNS)
-            {
-                continue
-            }
-            
             // get the character
-            var option: String = translationNS.substringWithRange(NSRange(location: answerNS.length, length: 1))
+            var potentialChar: Character? = translation.word[currentAnswer.length()]
             
-            if option != nil
+            if let char = potentialChar
             {
-                options.append(option)
+                if !contains(options, char)
+                {
+                    options.append(char)
+                }
             }
-        }
-        
-        // already too many options?
-        while options.count > 9
-        {
-            // randomly remove options
-            options.removeAtIndex(random() % options.count)
-        }
-        
-        // too little options?
-        while options.count < 9
-        {
-            // get random character
-            var allCharacters: NSString = "abcdefghijklmnopqrstuvwxyzàáâãéêíòóôõúüç"
-            let range = NSRange(location: random() % allCharacters.length, length: 1)
-            var randChar: String = allCharacters.substringWithRange(range)
-            
-            var insertIndex = random() % (options.count + 1)
-            options.insert(randChar, atIndex: insertIndex)
         }
         
         return options
@@ -169,6 +182,7 @@ class PSModel
         addPortugueseTerms()
         addTranslationPairs()
         sortEnglishByPortugueseFrequencies()
+        sortPortugueseByFrequencies()
         goToNextQuestion()
     }
     
@@ -178,7 +192,7 @@ class PSModel
         {
             var f1 = 0, f2 = 0
             
-            var entry: PSDictionaryEntry = dictionary[firstTerm.word]!
+            var entry: PSDictionaryEntry = dictionaryEnPt[firstTerm.word]!
             
             for translation in entry.translations
             {
@@ -188,7 +202,7 @@ class PSModel
                 }
             }
             
-            entry = dictionary[secondTerm.word]!
+            entry = dictionaryEnPt[secondTerm.word]!
             
             for translation in entry.translations
             {
@@ -202,6 +216,16 @@ class PSModel
         }
         
         english.terms.sort(isOrderedByPortugueseFrequency)
+    }
+    
+    func sortPortugueseByFrequencies()
+    {
+        func isOrderedByFrequency(firstTerm: PSTerm, secondTerm: PSTerm) -> Bool
+        {
+            return firstTerm.frequency > secondTerm.frequency
+        }
+        
+        portuguese.terms.sort(isOrderedByFrequency)
     }
     
     func addEnglishTerms()
@@ -260,7 +284,6 @@ class PSModel
         portuguese.add(PSTerm(word: "ela", frequency: 591683))
         portuguese.add(PSTerm(word: "tu", frequency: 446256))
         portuguese.add(PSTerm(word: "nós", frequency: 316828))
-        portuguese.add(PSTerm(word: "estar", frequency: 176987))
     }
     
     func addTranslationPairs()
@@ -326,20 +349,46 @@ class PSModel
             english.add(englishTerm!)
         }
         
-        // make sure the dictionary holds the entry for the english (key-) word
-        var entry = dictionary[englishWord]
+        // make sure the dictionary holds the entry for the key-word
+        var entry = dictionaryEnPt[englishWord]
         
         if entry == nil
         {
             entry = PSDictionaryEntry()
             entry?.keyTerm = englishTerm
-            dictionary[englishWord] = entry
+            dictionaryEnPt[englishWord] = entry
         }
         
         // make sure the entry holds the translation
         if !entry!.translationExists(portugueseWord)
         {
             entry!.translations.append(portugueseTerm!)
+        }
+        
+        addTerm(portugueseTerm!,
+            translation: englishTerm!,
+            toDictionary: dictionaryPtEn)
+    }
+    
+    func addTerm(keyTerm: PSTerm,
+        translation: PSTerm,
+        toDictionary dictionary: PSDictionary)
+    {
+        // make sure the dictionary holds the entry for the key-word
+        var entry = dictionary.dictionary[keyTerm.word]
+        
+        if entry == nil
+        {
+            entry = PSDictionaryEntry()
+            entry?.keyTerm = keyTerm
+
+            dictionary.dictionary[keyTerm.word] = entry
+        }
+        
+        // make sure the entry holds the translation
+        if !entry!.translationExists(translation.word)
+        {
+            entry!.translations.append(translation)
         }
     }
     
@@ -365,6 +414,11 @@ class PSModel
     
 }
 
+class PSDictionary
+{
+    var dictionary = [String : PSDictionaryEntry]()
+}
+    
 class PSDictionaryEntry
 {
     weak var keyTerm: PSTerm?

@@ -84,7 +84,7 @@ class PSMainVC: UIViewController, UITextFieldDelegate
         {
             giveFeedback(false)
         }
-        else if model!.userAnswerIsComplete()
+        else if model!.currentAnswerIsCorrect()
         {
             giveFeedback(true)
         }
@@ -96,11 +96,11 @@ class PSMainVC: UIViewController, UITextFieldDelegate
     
     func updateAnswerButtonTitles()
     {
-        let options = model!.nextCharacterOptions()
+        let characters = model!.allCharacterOptions()
         
         for (index, button) in enumerate(answerButtons!)
         {
-            button.setTitle(options[index], forState: UIControlState.Normal)
+            button.setTitle(String(characters[index]), forState: UIControlState.Normal)
         }
     }
     

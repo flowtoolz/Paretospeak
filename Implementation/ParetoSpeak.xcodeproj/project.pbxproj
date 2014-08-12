@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B51BEFF199A702E009D5B29 /* PSStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */; };
 		3B97B14C199A435E007F9538 /* PSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97B14B199A435E007F9538 /* PSModel.swift */; };
-		3BC77B8B1995577F005D2513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8A1995577F005D2513 /* AppDelegate.swift */; };
+		3BC77B8B1995577F005D2513 /* PSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8A1995577F005D2513 /* PSAppDelegate.swift */; };
 		3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8C1995577F005D2513 /* PSMainVC.swift */; };
 		3BC77B921995577F005D2513 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC77B911995577F005D2513 /* Images.xcassets */; };
 		3BC77B9E1995577F005D2513 /* ParetoSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B9D1995577F005D2513 /* ParetoSpeakTests.swift */; };
@@ -25,10 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSStringHelper.swift; sourceTree = "<group>"; };
 		3B97B14B199A435E007F9538 /* PSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSModel.swift; sourceTree = "<group>"; };
 		3BC77B851995577F005D2513 /* ParetoSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParetoSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC77B891995577F005D2513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BC77B8A1995577F005D2513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BC77B8A1995577F005D2513 /* PSAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAppDelegate.swift; sourceTree = "<group>"; };
 		3BC77B8C1995577F005D2513 /* PSMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMainVC.swift; sourceTree = "<group>"; };
 		3BC77B911995577F005D2513 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BC77B971995577F005D2513 /* ParetoSpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParetoSpeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +77,10 @@
 		3BC77B871995577F005D2513 /* ParetoSpeak */ = {
 			isa = PBXGroup;
 			children = (
-				3BC77B8A1995577F005D2513 /* AppDelegate.swift */,
+				3BC77B8A1995577F005D2513 /* PSAppDelegate.swift */,
 				3BC77B8C1995577F005D2513 /* PSMainVC.swift */,
 				3B97B14B199A435E007F9538 /* PSModel.swift */,
+				3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */,
 				3BC77B911995577F005D2513 /* Images.xcassets */,
 				3BC77B881995577F005D2513 /* Supporting Files */,
 			);
@@ -208,8 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B97B14C199A435E007F9538 /* PSModel.swift in Sources */,
+				3B51BEFF199A702E009D5B29 /* PSStringHelper.swift in Sources */,
 				3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */,
-				3BC77B8B1995577F005D2513 /* AppDelegate.swift in Sources */,
+				3BC77B8B1995577F005D2513 /* PSAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
