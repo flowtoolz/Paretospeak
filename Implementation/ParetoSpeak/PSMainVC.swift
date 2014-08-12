@@ -4,6 +4,9 @@
 
 import UIKit
 
+let bigFontSize: CGFloat = 40.0
+let smallFontSize: CGFloat = 20.0
+
 class PSMainVC: UIViewController, UITextFieldDelegate
 {
     // MARK: properties
@@ -62,7 +65,7 @@ class PSMainVC: UIViewController, UITextFieldDelegate
         
         answerField?.text = ""
         answerField?.backgroundColor = UIColor.lightGrayColor()
-        answerField!.font = UIFont.systemFontOfSize(20.0)
+        answerField!.font = UIFont.systemFontOfSize(smallFontSize)
         setAnswerButtonsHidden(false)
         updateAnswerButtonTitles()
         feedbackLabel?.text = ""
@@ -74,7 +77,7 @@ class PSMainVC: UIViewController, UITextFieldDelegate
     {
         if answerField?.text == ""
         {
-            answerField!.font = UIFont.systemFontOfSize(30.0)
+            answerField!.font = UIFont.systemFontOfSize(bigFontSize)
         }
         
         answerField?.text = answerField!.text + button!.titleLabel.text
@@ -131,7 +134,7 @@ class PSMainVC: UIViewController, UITextFieldDelegate
         nextButton?.hidden = false
         
         feedbackTimer = NSTimer.scheduledTimerWithTimeInterval(
-            success ? 0.5 : 4.0,
+            success ? 1.0 : 4.0,
             target: self,
             selector: Selector("nextButtonPressed"),
             userInfo: nil,
@@ -140,6 +143,8 @@ class PSMainVC: UIViewController, UITextFieldDelegate
     
     func nextButtonPressed()
     {
+        feedbackTimer?.invalidate()
+        
         model?.goToNextQuestion()
         
         poseQuestion()
@@ -151,12 +156,14 @@ class PSMainVC: UIViewController, UITextFieldDelegate
 func createQuestionLabel() -> UILabel
 {
     let screenSize = UIScreen.mainScreen().bounds.size
-    let labelFrame = CGRect(x: 0, y: 0, width: screenSize.width, height: 50)
+    let buttonSize = screenSize.width / 3
+    let labelHeight = (screenSize.height - (3 * buttonSize)) / 3
+    let labelFrame = CGRect(x: 0, y: 0, width: screenSize.width, height: labelHeight)
     var label = UILabel(frame: labelFrame)
     label.text = "Voce"
     label.textAlignment = NSTextAlignment.Center
     label.backgroundColor = UIColor.lightGrayColor()
-    label.font = UIFont.systemFontOfSize(30.0)
+    label.font = UIFont.systemFontOfSize(bigFontSize)
     
     return label
 }
@@ -164,12 +171,14 @@ func createQuestionLabel() -> UILabel
 func createAnswerTextField() -> UITextField
 {
     let screenSize = UIScreen.mainScreen().bounds.size
-    let fieldFrame = CGRect(x: 0, y: 50, width: screenSize.width, height: 50)
+    let buttonSize = screenSize.width / 3
+    let fieldHeight = (screenSize.height - (3 * buttonSize)) / 3
+    let fieldFrame = CGRect(x: 0, y: fieldHeight, width: screenSize.width, height: fieldHeight)
     var answerField = UITextField(frame: fieldFrame)
     answerField.backgroundColor = UIColor.lightGrayColor()
     answerField.placeholder = "Translate to Portuguese."
     answerField.textAlignment = NSTextAlignment.Center
-    answerField.font = UIFont.systemFontOfSize(20.0)
+    answerField.font = UIFont.systemFontOfSize(smallFontSize)
     
     return answerField
 }
@@ -178,11 +187,12 @@ func createFeedbackLabel() -> UILabel
 {
     let screenSize = UIScreen.mainScreen().bounds.size
     let buttonSize = screenSize.width / 3
-    let labelFrame = CGRect(x: 0, y: 100, width: screenSize.width, height: 50)
+    let labelHeight = (screenSize.height - (3 * buttonSize)) / 3
+    let labelFrame = CGRect(x: 0, y: 2 * labelHeight, width: screenSize.width, height: labelHeight)
     var label = UILabel(frame: labelFrame)
     label.textAlignment = NSTextAlignment.Center
     label.backgroundColor = UIColor.greenColor()
-    label.font = UIFont.systemFontOfSize(20.0)
+    label.font = UIFont.systemFontOfSize(smallFontSize)
     label.hidden = true
     
     return label
@@ -208,7 +218,7 @@ func createAnswerButtons() -> [UIButton]
             var button = UIButton(frame: buttonFrame)
             button.setTitle("\(x + 3 * y)", forState: UIControlState.Normal)
             button.backgroundColor = UIColor.lightGrayColor()
-            button.titleLabel.font = UIFont.systemFontOfSize(30.0)
+            button.titleLabel.font = UIFont.systemFontOfSize(bigFontSize)
             
             buttons.append(button)
         }
@@ -225,7 +235,7 @@ func createNextButton() -> UIButton
     var button = UIButton(frame: buttonFrame)
     button.setTitle("Next Word", forState: UIControlState.Normal)
     button.backgroundColor = UIColor.lightGrayColor()
-    button.titleLabel.font = UIFont.systemFontOfSize(30.0)
+    button.titleLabel.font = UIFont.systemFontOfSize(bigFontSize)
     
     return button
 }
