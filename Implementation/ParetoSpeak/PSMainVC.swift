@@ -14,6 +14,7 @@ class PSMainVC: UIViewController, UITextFieldDelegate
     var answerField: UITextField? = createAnswerTextField()
     var answerButtons: [UIButton]? = createAnswerButtons()
     var feedbackLabel: UILabel? = createFeedbackLabel()
+    var feedbackTimer: NSTimer?
     var nextButton: UIButton? = createNextButton()
     
     // MARK: view delegate protocol
@@ -128,6 +129,13 @@ class PSMainVC: UIViewController, UITextFieldDelegate
         answerField?.backgroundColor = feedbackColor
         
         nextButton?.hidden = false
+        
+        feedbackTimer = NSTimer.scheduledTimerWithTimeInterval(
+            success ? 0.5 : 4.0,
+            target: self,
+            selector: Selector("nextButtonPressed"),
+            userInfo: nil,
+            repeats: false)
     }
     
     func nextButtonPressed()
