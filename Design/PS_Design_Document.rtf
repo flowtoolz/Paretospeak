@@ -19,9 +19,9 @@
 \b\fs48 Allgemein
 \b0\fs26 \
 
-\fs28 vocabulary trainer \'85 effective, individualized, fun \'85  der vorzugsweise vokabeln abfragt die man die l\'e4ngste zeit nicht mehr richtig \'fcbersetzen konnte und die sehr n\'fctzlich sind, so dass sich das aktive vokabular des users tats\'e4chlich schnell erweitert ... au\'dferdem kann er f\'fcr die spezifischen bereiche in denen er t\'e4tig ist oder mit denen er sich befasst gezielt sein vokabular erweitern \'85
+\fs28 vocabulary trainer \'85 effective, individualized, fun \'85  der vorzugsweise vokabeln abfragt die man die l\'e4ngste zeit nicht mehr richtig \'fcbersetzen konnte und die sehr n\'fctzlich sind, so dass sich das aktive vokabular des users tats\'e4chlich schnell erweitert ... au\'dferdem kann er f\'fcr die spezifischen bereiche in denen er t\'e4tig ist oder mit denen er sich befasst gezielt sein vokabular erweitern \'85\
+
 \fs26 \
-\
 
 \b\fs48 Entwicklungmethode\
 \pard\tx220\tx720\pardeftab720\li720\fi-720
@@ -38,9 +38,8 @@
 \b\fs48 Anforderungen beim Vokabel-Training
 \b0\fs26 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls2\ilvl0\cf0 {\listtext	
-\fs28 1.	}
-\fs26 http://fourhourworkweek.com/category/language/\
+\ls2\ilvl0
+\fs28 \cf0 {\listtext	1.	}http://fourhourworkweek.com/category/language/\
 {\listtext	2.	}http://hackingportuguese.com/tips-and-tricks/tips-for-learning-vocabulary/\
 {\listtext	3.	}https://www.youtube.com/watch?v=KUMGNknv4fo\
 {\listtext	4.	}man \'fcbersetzt von der native language in die new language, um das eigene sprechen und den recall zu unterst\'fctzen anstatt nur verstehen und recognition. damit pr\'e4gen sich die W\'f6rter tiefer ein.\
@@ -65,55 +64,53 @@
 \f1 \uc0\u10003 
 \f0 	}the subject matter in which the learner wants to apply the language (application, individualization)\
 \pard\pardeftab720
-\cf0 \
+
+\fs26 \cf0 \
 
 \b\fs48 Implementierte Features
 \b0\fs26 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls3\ilvl0\cf0 {\listtext	
-\fs28 1.	}
-\fs26 training von recall, kein hauch von multiple choice\
+\ls3\ilvl0
+\fs28 \cf0 {\listtext	1.	}training von recall, kein hauch von multiple choice\
 {\listtext	2.	}verschiedene \'fcbersetzungen als antwort m\'f6glich\
 {\listtext	3.	}einfache bedienung, keine tastatur, mit iphone einh\'e4ndig, einfache eingabe von sonderzeichen\
 {\listtext	4.	}schlichtes design, minimale farben, gro\'dfe schrift, keine status bar\
 {\listtext	5.	}vokabeln nach h\'e4ufigkeit ausgew\'e4hlt\
+{\listtext	6.	}nach kurzer zeit geht die app automatisch zur n\'e4chsten frage, so dass dem user dieser tap erspart wird\
 \pard\pardeftab720
 \cf0 \
 
 \b\fs48 Definitive (fehlende) Features
 \b0\fs26 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls4\ilvl0\cf0 {\listtext	
-\fs28 1.	}
-\fs26 nach kurzer zeit vom feedback automatisch zur n\'e4chsten frage gehen so dass dem user dieser tap erspart wird\
-{\listtext	2.	}bei l\'e4ngeren W\'f6rtern die Antwort auch schon nach weniger Buchstaben akzeptieren\
-{\listtext	3.	}unser \'94spaced repetion\'93 algorithmus:\
+\ls4\ilvl0
+\fs28 \cf0 {\listtext	1.	}bei l\'e4ngeren W\'f6rtern die Antwort auch schon nach weniger Buchstaben akzeptieren\
+{\listtext	2.	}unser \'94spaced repetion\'93 algorithmus:\
 \pard\tx940\tx1440\pardeftab720\li1440\fi-1440
 \ls4\ilvl1\cf0 {\listtext	\uc0\u8259 	}software muss nach ner langen pause wieder etwas zur\'fcck zu einfacheren W\'f6rtern gehen, warm up phase\
 {\listtext	\uc0\u8259 	}score f\'fcr ein wort w\'e4chst bei richtiger Antwort um bestimmten faktor, elo-system\
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls4\ilvl0\cf0 {\listtext	5.	}input Buchstaben sollen zueinander \'e4hnlich sein (vokale, k/c/g, p/b/v, s/z/j/g usw) damit noch mehr recall trainiert wird statt recognition\
-{\listtext	6.	}daten-persistenz: das lern-profil des users muss auch bei schlie\'dfen der app gespeichert werden, ohne das geht\'92s nicht ;)\
-{\listtext	7.	}wir nutzen nicht die Terminologie aus der schule wie z.bsp. lesson, grade, difficulty, test oder einfach nur learning \'85 eher Terminologie aus dem sport: training, session, intensity, skill, benchmark\
-{\listtext	8.	}evtl. rechtschreibfehler akzeptieren bzw. das feedback differenzieren \'85 ampel system mit gelb f\'fcr halbwegs richtige antwort? pro buchstabe anwenden?\
-{\listtext	9.	}training in sessions aufteilen, progress bar f\'fcr die aktuelle session und \'dcbersicht \'fcber absolvierte sessions oder vergleichbares feedback\
-{\listtext	10.	}bei feedback die wichtigste L\'f6sung vom system aussprechen lassen\
-{\listtext	11.	}bestimmte \'dcbersetzung erzwingen indem man die korrekten Buchstaben anderer m\'f6glicher antworten nicht extra mit anbietet (hatten daf\'fcr den hangman-style angedacht, aber so ist es einfacher, konsistenter und mit mehr recall)\
-{\listtext	12.	}Look & Feel: freundlich, modern, nicht zu kindlich/knuddelig, schlicht aber edel, f\'fcr intelligente pragmatische menschen mit klaren Priorit\'e4rten und wenig zeit \'85 zu erarbeiten: Name, Logo, Icon, Graphic Design, Animationen\
-{\listtext	13.	}soll auch aufm ipad gut aussehen bzw. sinn machen, so wie auf allen screen rotations (auto layout coden)\
-{\listtext	14.	}weitere sprachen f\'fcr das app interface sowie zum eigentlichen vokabeln lernen: deutsch, spanisch, franz\'f6sisch, italienisch \'85 mal statistik suchen um zu sch\'e4tzen welche m\'e4rkte lohnen\
-{\listtext	15.	}promo website: features, hintergrund \
+\ls4\ilvl0\cf0 {\listtext	3.	}input Buchstaben sollen zueinander \'e4hnlich sein (vokale, k/c/g, p/b/v, s/z/j/g usw) damit noch mehr recall trainiert wird statt recognition\
+{\listtext	4.	}daten-persistenz: das lern-profil des users muss auch bei schlie\'dfen der app gespeichert werden, ohne das geht\'92s nicht ;)\
+{\listtext	5.	}wir nutzen nicht die Terminologie aus der schule wie z.bsp. lesson, grade, difficulty, test oder einfach nur learning \'85 eher Terminologie aus dem sport: training, session, intensity, skill, benchmark\
+{\listtext	6.	}Daten, Daten, Daten! es sollen wenigstens 1000 Vokabeln rein\
+{\listtext	7.	}evtl. rechtschreibfehler akzeptieren bzw. das feedback differenzieren \'85 ampel system mit gelb f\'fcr halbwegs richtige antwort? pro buchstabe anwenden?\
+{\listtext	8.	}training in sessions aufteilen, progress bar f\'fcr die aktuelle session und \'dcbersicht \'fcber absolvierte sessions oder vergleichbares feedback\
+{\listtext	9.	}bei feedback die wichtigste L\'f6sung vom system aussprechen lassen\
+{\listtext	10.	}bestimmte \'dcbersetzung erzwingen indem man die korrekten Buchstaben anderer m\'f6glicher antworten nicht extra mit anbietet (hatten daf\'fcr den hangman-style angedacht, aber so ist es einfacher, konsistenter und mit mehr recall)\
+{\listtext	11.	}Look & Feel: freundlich, modern, nicht zu kindlich/knuddelig, schlicht aber edel, f\'fcr intelligente pragmatische menschen mit klaren Priorit\'e4rten und wenig zeit \'85 zu erarbeiten: Name, Logo, Icon, Graphic Design, Animationen\
+{\listtext	12.	}soll auch aufm ipad gut aussehen bzw. sinn machen, so wie auf allen screen rotations (auto layout coden)\
+{\listtext	13.	}weitere sprachen f\'fcr das app interface sowie zum eigentlichen vokabeln lernen: deutsch, spanisch, franz\'f6sisch, italienisch \'85 mal statistik suchen um zu sch\'e4tzen welche m\'e4rkte lohnen\
+{\listtext	14.	}promo website: features, hintergrund \
 \pard\tx566\pardeftab720
 
 \b \cf0 \
 
 \fs48 Potentielle (zuk\'fcnftige) Features
-\fs26 \
+\fs28 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720
 \ls5\ilvl0
-\b0 \cf0 {\listtext	
-\fs28 1.	}
-\fs26 Geschlecht, plural/singular und personenformen (Beugungen) mit ins Modell einbeziehen und entsprechend auch kleine Wortgruppen abfragen wie z. bsp. Artikel + Substantiv oder damit hinweise eingeblendet werden k\'f6nnen wie die frage gemeint ist z.bsp \'94the (feminine)\'93\
+\b0 \cf0 {\listtext	1.	}Geschlecht, plural/singular und personenformen (Beugungen) mit ins Modell einbeziehen und entsprechend auch kleine Wortgruppen abfragen wie z. bsp. Artikel + Substantiv oder damit hinweise eingeblendet werden k\'f6nnen wie die frage gemeint ist z.bsp \'94the (feminine)\'93\
 {\listtext	2.	}user kann \'dcbersetzungen selbst hinzuf\'fcgen\
 {\listtext	3.	}anbieten themen- und sparchspezifischer \'84language packs\'93\
 {\listtext	4.	}wie bei stackoverflow W\'f6rter einsprechen lassen, upvoten\'85 user h\'f6rt automatisch beste L\'f6sung...  (live mocha?)\
