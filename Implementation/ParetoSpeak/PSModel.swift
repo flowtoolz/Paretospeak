@@ -6,7 +6,7 @@ class PSModel
     
     var english = PSLanguage(name: "English")
     var portuguese = PSLanguage(name: "Portuguese")
-    var dictionaryEnPt = [String : PSDictionaryEntry]()
+    var dictionaryEnPt = PSDictionary()
     var dictionaryPtEn = PSDictionary()
     var currentQuestion = ""
     var currentAnswer = ""
@@ -49,7 +49,7 @@ class PSModel
             return ""
         }
         
-        var entry = dictionaryEnPt[currentQuestion]
+        var entry = dictionaryEnPt.dictionary[currentQuestion]
         
         if entry == nil
         {
@@ -65,7 +65,7 @@ class PSModel
                 translationsString += ", "
             }
             
-            translationsString += dictionaryEnPt[currentQuestion]!.translations[index].word
+            translationsString += dictionaryEnPt.dictionary[currentQuestion]!.translations[index].word
         }
         
         return translationsString
@@ -74,7 +74,7 @@ class PSModel
     func possibleTranslationsForCurrentAnswer() -> [PSTerm]
     {
         // dictionary entry
-        var entry = dictionaryEnPt[currentQuestion]
+        var entry = dictionaryEnPt.dictionary[currentQuestion]
         
         if entry == nil
         {
@@ -98,7 +98,7 @@ class PSModel
     
     func currentAnswerIsCorrect() -> Bool
     {
-        var entry = dictionaryEnPt[currentQuestion]
+        var entry = dictionaryEnPt.dictionary[currentQuestion]
         
         if entry == nil
         {
@@ -146,7 +146,7 @@ class PSModel
     func correctCharacterOptions() -> [Character]
     {
         // dictionary entry
-        var entry = dictionaryEnPt[currentQuestion]
+        var entry = dictionaryEnPt.dictionary[currentQuestion]
         
         if entry == nil
         {
@@ -192,7 +192,7 @@ class PSModel
         {
             var f1 = 0, f2 = 0
             
-            var entry: PSDictionaryEntry = dictionaryEnPt[firstTerm.word]!
+            var entry: PSDictionaryEntry = dictionaryEnPt.dictionary[firstTerm.word]!
             
             for translation in entry.translations
             {
@@ -202,7 +202,7 @@ class PSModel
                 }
             }
             
-            entry = dictionaryEnPt[secondTerm.word]!
+            entry = dictionaryEnPt.dictionary[secondTerm.word]!
             
             for translation in entry.translations
             {
@@ -349,47 +349,9 @@ class PSModel
             english.add(englishTerm!)
         }
         
-        // make sure the dictionary holds the entry for the key-word
-        var entry = dictionaryEnPt[englishWord]
-        
-        if entry == nil
-        {
-            entry = PSDictionaryEntry()
-            entry?.keyTerm = englishTerm
-            dictionaryEnPt[englishWord] = entry
-        }
-        
-        // make sure the entry holds the translation
-        if !entry!.translationExists(portugueseWord)
-        {
-            entry!.translations.append(portugueseTerm!)
-        }
-        
-        addTerm(portugueseTerm!,
-            translation: englishTerm!,
-            toDictionary: dictionaryPtEn)
-    }
-    
-    func addTerm(keyTerm: PSTerm,
-        translation: PSTerm,
-        toDictionary dictionary: PSDictionary)
-    {
-        // make sure the dictionary holds the entry for the key-word
-        var entry = dictionary.dictionary[keyTerm.word]
-        
-        if entry == nil
-        {
-            entry = PSDictionaryEntry()
-            entry?.keyTerm = keyTerm
-
-            dictionary.dictionary[keyTerm.word] = entry
-        }
-        
-        // make sure the entry holds the translation
-        if !entry!.translationExists(translation.word)
-        {
-            entry!.translations.append(translation)
-        }
+        // add translations to dictionaries
+        dictionaryEnPt.addTranslation(portugueseTerm!, forKey: englishTerm!)
+        dictionaryPtEn.addTranslation(englishTerm!, forKey: portugueseTerm!)
     }
     
     // MARK: singleton access
@@ -397,16 +359,16 @@ class PSModel
     private init() {initialize()}
     
     class var sharedInstance: PSModel
-        {
-    struct staticData
     {
-        static var instance: PSModel?
-        static var token: dispatch_once_t = 0
+        struct staticData
+        {
+            static var instance: PSModel?
+            static var token: dispatch_once_t = 0
         }
         
         dispatch_once(&staticData.token)
-            {
-                staticData.instance = PSModel()
+        {
+            staticData.instance = PSModel()
         }
         
         return staticData.instance!
@@ -417,6 +379,23 @@ class PSModel
 class PSDictionary
 {
     var dictionary = [String : PSDictionaryEntry]()
+    
+    func addTranslation(translation: PSTerm, forKey key: PSTerm)
+    {
+        var entry = dictionary[key.word]
+        
+        if entry == nil
+        {
+            entry = PSDictionaryEntry()
+            entry?.keyTerm = key
+            dictionary[key.word] = entry
+        }
+        
+        if !entry!.translationExists(translation.word)
+        {
+            entry!.translations.append(translation)
+        }
+    }
 }
     
 class PSDictionaryEntry

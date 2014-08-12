@@ -9,8 +9,6 @@ class PSAppDelegate: UIResponder, UIApplicationDelegate
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool
     {
-        testStuff()
-
         application!.statusBarHidden = true
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -19,15 +17,4 @@ class PSAppDelegate: UIResponder, UIApplicationDelegate
         
         return true
     }
-}
-
-func testStuff()
-{
-    var testString = "Hallo"
-    
-    println("length = \(testString.length())")
-    
-    println(testString[2...4])
-    
-    println(testString[2])
 }
