@@ -305,7 +305,6 @@ class PSModel
         addTranslation("one", portugueseWord: "uma")
         addTranslation("a", portugueseWord: "uma")
         addTranslation("an", portugueseWord: "uma")
-        addTranslation("be", portugueseWord: "estar")
         addTranslation("i", portugueseWord: "eu")
         addTranslation("i", portugueseWord: "eu")
         addTranslation("with", portugueseWord: "com")
