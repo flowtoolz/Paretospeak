@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B51BEFF199A702E009D5B29 /* PSStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */; };
+		3B51BEFF199A702E009D5B29 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B51BEFE199A702E009D5B29 /* FTStringHelper.swift */; };
 		3B97B14C199A435E007F9538 /* PSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97B14B199A435E007F9538 /* PSModel.swift */; };
 		3BC77B8B1995577F005D2513 /* PSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8A1995577F005D2513 /* PSAppDelegate.swift */; };
 		3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC77B8C1995577F005D2513 /* PSMainVC.swift */; };
@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSStringHelper.swift; sourceTree = "<group>"; };
+		3B51BEFE199A702E009D5B29 /* FTStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTStringHelper.swift; sourceTree = "<group>"; };
 		3B97B14B199A435E007F9538 /* PSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSModel.swift; sourceTree = "<group>"; };
 		3BC77B851995577F005D2513 /* ParetoSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParetoSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC77B891995577F005D2513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				3BC77B8A1995577F005D2513 /* PSAppDelegate.swift */,
 				3BC77B8C1995577F005D2513 /* PSMainVC.swift */,
 				3B97B14B199A435E007F9538 /* PSModel.swift */,
-				3B51BEFE199A702E009D5B29 /* PSStringHelper.swift */,
+				3B51BEFE199A702E009D5B29 /* FTStringHelper.swift */,
 				3BC77B911995577F005D2513 /* Images.xcassets */,
 				3BC77B881995577F005D2513 /* Supporting Files */,
 			);
@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					3BC77B841995577F005D2513 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = QP5N93UU9F;
 					};
 					3BC77B961995577F005D2513 = {
 						CreatedOnToolsVersion = 6.0;
@@ -211,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B97B14C199A435E007F9538 /* PSModel.swift in Sources */,
-				3B51BEFF199A702E009D5B29 /* PSStringHelper.swift in Sources */,
+				3B51BEFF199A702E009D5B29 /* FTStringHelper.swift in Sources */,
 				3BC77B8D1995577F005D2513 /* PSMainVC.swift in Sources */,
 				3BC77B8B1995577F005D2513 /* PSAppDelegate.swift in Sources */,
 			);
@@ -321,9 +322,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -333,9 +337,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
