@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>71AEF756-F521-4AA4-8B40-898E28E65D84</string>
+	<string>FA0CFF02-008D-402F-87F7-9DF96BFFD2F9</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ParetoSpeak</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://bitbucket.org/flowtoolz/paretospeak.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Implementation/ParetoSpeak.xcodeproj</string>
+	<string>Implementation/ParetoSpeak/ParetoSpeak.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5C8CDE4B6DA40A42F13E072FAC3382FCFB351120</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/flowtoolz/paretospeak.git</string>

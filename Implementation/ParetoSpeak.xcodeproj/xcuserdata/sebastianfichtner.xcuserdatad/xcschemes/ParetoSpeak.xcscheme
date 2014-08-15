@@ -14,9 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BC77B841995577F005D2513"
+               BlueprintIdentifier = "3BF120C4199EC8270015D54A"
                BuildableName = "ParetoSpeak.app"
                BlueprintName = "ParetoSpeak"
+               ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BF120D9199EC8270015D54A"
+               BuildableName = "ParetoSpeakTests.xctest"
+               BlueprintName = "ParetoSpeakTests"
+               ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BD6898B199ECADA002EEF72"
+               BuildableName = "FTPortfolioTests.xctest"
+               BlueprintName = "FTPortfolioTests"
                ReferencedContainer = "container:ParetoSpeak.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +60,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BC77B961995577F005D2513"
+               BlueprintIdentifier = "3BF120D9199EC8270015D54A"
                BuildableName = "ParetoSpeakTests.xctest"
                BlueprintName = "ParetoSpeakTests"
+               ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BD6898B199ECADA002EEF72"
+               BuildableName = "FTPortfolioTests.xctest"
+               BlueprintName = "FTPortfolioTests"
                ReferencedContainer = "container:ParetoSpeak.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,7 +80,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BC77B841995577F005D2513"
+            BlueprintIdentifier = "3BF120C4199EC8270015D54A"
             BuildableName = "ParetoSpeak.app"
             BlueprintName = "ParetoSpeak"
             ReferencedContainer = "container:ParetoSpeak.xcodeproj">
@@ -61,7 +99,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BC77B841995577F005D2513"
+            BlueprintIdentifier = "3BF120C4199EC8270015D54A"
             BuildableName = "ParetoSpeak.app"
             BlueprintName = "ParetoSpeak"
             ReferencedContainer = "container:ParetoSpeak.xcodeproj">
@@ -79,7 +117,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BC77B841995577F005D2513"
+            BlueprintIdentifier = "3BF120C4199EC8270015D54A"
             BuildableName = "ParetoSpeak.app"
             BlueprintName = "ParetoSpeak"
             ReferencedContainer = "container:ParetoSpeak.xcodeproj">

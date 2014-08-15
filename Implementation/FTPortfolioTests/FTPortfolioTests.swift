@@ -1,6 +1,6 @@
 //
-//  ParetoSpeakTests.swift
-//  ParetoSpeakTests
+//  FTPortfolioTests.swift
+//  FTPortfolioTests
 //
 //  Created by Sebastian Fichtner on 16.08.14.
 //  Copyright (c) 2014 Flowtoolz. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class ParetoSpeakTests: XCTestCase {
+class FTPortfolioTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
