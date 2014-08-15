@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC362D1199ED44300351E42 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC362D0199ED44300351E42 /* FTStringHelper.swift */; };
+		3BC362D2199ED44300351E42 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC362D0199ED44300351E42 /* FTStringHelper.swift */; };
 		3BD6897A199ECA7D002EEF72 /* PSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD68977199ECA7D002EEF72 /* PSAppDelegate.swift */; };
 		3BD6897B199ECA7D002EEF72 /* PSMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD68978199ECA7D002EEF72 /* PSMainVC.swift */; };
 		3BD6897C199ECA7D002EEF72 /* PSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD68979199ECA7D002EEF72 /* PSModel.swift */; };
@@ -14,8 +16,6 @@
 		3BD68993199ECADA002EEF72 /* FTPortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD68992199ECADA002EEF72 /* FTPortfolioTests.swift */; };
 		3BD68996199ECADA002EEF72 /* FTPortfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD68982199ECADA002EEF72 /* FTPortfolio.framework */; };
 		3BD68997199ECADA002EEF72 /* FTPortfolio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD68982199ECADA002EEF72 /* FTPortfolio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3BD689A2199ECB2E002EEF72 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD689A1199ECB2E002EEF72 /* FTStringHelper.swift */; };
-		3BD689A3199ECC1C002EEF72 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD689A1199ECB2E002EEF72 /* FTStringHelper.swift */; };
 		3BF120CE199EC8270015D54A /* ParetoSpeak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF120CC199EC8270015D54A /* ParetoSpeak.xcdatamodeld */; };
 		3BF120D5199EC8270015D54A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF120D4199EC8270015D54A /* Images.xcassets */; };
 		3BF120E1199EC8270015D54A /* ParetoSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF120E0199EC8270015D54A /* ParetoSpeakTests.swift */; };
@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3BC362D0199ED44300351E42 /* FTStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FTStringHelper.swift; path = "../../../FTPortfolioWorkingCopy/Swift+Foundation/FTStringHelper.swift"; sourceTree = "<group>"; };
 		3BD68977199ECA7D002EEF72 /* PSAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSAppDelegate.swift; sourceTree = "<group>"; };
 		3BD68978199ECA7D002EEF72 /* PSMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSMainVC.swift; sourceTree = "<group>"; };
 		3BD68979199ECA7D002EEF72 /* PSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSModel.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		3BD6898C199ECADA002EEF72 /* FTPortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTPortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD68991199ECADA002EEF72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD68992199ECADA002EEF72 /* FTPortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPortfolioTests.swift; sourceTree = "<group>"; };
-		3BD689A1199ECB2E002EEF72 /* FTStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FTStringHelper.swift; path = "../../../FTPortfolio/Swift+Foundation/FTStringHelper.swift"; sourceTree = "<group>"; };
 		3BF120C5199EC8270015D54A /* ParetoSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParetoSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF120C9199EC8270015D54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF120CD199EC8270015D54A /* ParetoSpeak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParetoSpeak.xcdatamodel; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		3BD68983199ECADA002EEF72 /* FTPortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				3BD689A1199ECB2E002EEF72 /* FTStringHelper.swift */,
+				3BC362D0199ED44300351E42 /* FTStringHelper.swift */,
 				3BD68986199ECADA002EEF72 /* FTPortfolio.h */,
 				3BD68984199ECADA002EEF72 /* Supporting Files */,
 			);
@@ -385,7 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD689A2199ECB2E002EEF72 /* FTStringHelper.swift in Sources */,
+				3BC362D2199ED44300351E42 /* FTStringHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD689A3199ECC1C002EEF72 /* FTStringHelper.swift in Sources */,
+				3BC362D1199ED44300351E42 /* FTStringHelper.swift in Sources */,
 				3BD6897C199ECA7D002EEF72 /* PSModel.swift in Sources */,
 				3BF120CE199EC8270015D54A /* ParetoSpeak.xcdatamodeld in Sources */,
 				3BD6897B199ECA7D002EEF72 /* PSMainVC.swift in Sources */,
@@ -660,6 +660,7 @@
 				3BD6899C199ECADA002EEF72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BD6899E199ECADA002EEF72 /* Build configuration list for PBXNativeTarget "FTPortfolioTests" */ = {
 			isa = XCConfigurationList;
@@ -668,6 +669,7 @@
 				3BD689A0199ECADA002EEF72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BF120C0199EC8270015D54A /* Build configuration list for PBXProject "ParetoSpeak" */ = {
 			isa = XCConfigurationList;
