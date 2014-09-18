@@ -1,5 +1,5 @@
 import Foundation
-import FTPortfolio
+// requires that portfolio files are within this module
 
 class PSModel
 {
@@ -373,7 +373,6 @@ class PSModel
         
         return staticData.instance!
     }
-    
 }
 
 class PSDictionary

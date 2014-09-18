@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B6D2323199FC8C900FA0A8A /* PSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D2320199FC8C900FA0A8A /* PSAppDelegate.swift */; };
+		3B6D2324199FC8C900FA0A8A /* PSMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D2321199FC8C900FA0A8A /* PSMainVC.swift */; };
+		3B6D2325199FC8C900FA0A8A /* PSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6D2322199FC8C900FA0A8A /* PSModel.swift */; };
+		3B6FB6B9199FD14B00581BB5 /* FTStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FB6B7199FD14B00581BB5 /* FTStringHelper.swift */; };
+		3B6FB6BC199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FB6BA199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodeld */; };
+		3B6FB6BE199FDE2600581BB5 /* PSCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FB6BD199FDE2600581BB5 /* PSCoreData.swift */; };
+		3BB144B9199FC833009DB426 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB144B8199FC833009DB426 /* Images.xcassets */; };
+		3BB144C5199FC834009DB426 /* ParetoSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB144C4199FC834009DB426 /* ParetoSpeakTests.swift */; };
+		3BC75B1919A0B14100535DF0 /* PSManagedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC75B1819A0B14100535DF0 /* PSManagedModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BB144BF199FC834009DB426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BB144A4199FC833009DB426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BB144AB199FC833009DB426;
+			remoteInfo = ParetoSpeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B6D2320199FC8C900FA0A8A /* PSAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSAppDelegate.swift; path = ../../SourceCode/PSAppDelegate.swift; sourceTree = "<group>"; };
+		3B6D2321199FC8C900FA0A8A /* PSMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSMainVC.swift; path = ../../SourceCode/PSMainVC.swift; sourceTree = "<group>"; };
+		3B6D2322199FC8C900FA0A8A /* PSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSModel.swift; path = ../../SourceCode/PSModel.swift; sourceTree = "<group>"; };
+		3B6FB6B7199FD14B00581BB5 /* FTStringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTStringHelper.swift; sourceTree = "<group>"; };
+		3B6FB6BB199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PSManagedObjectModel.xcdatamodel; sourceTree = "<group>"; };
+		3B6FB6BD199FDE2600581BB5 /* PSCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSCoreData.swift; path = ../../SourceCode/PSCoreData.swift; sourceTree = "<group>"; };
+		3B7F729419A12D520020F60D /* ParetoSpeak-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParetoSpeak-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3BB144AC199FC833009DB426 /* ParetoSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParetoSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB144B0199FC833009DB426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB144B8199FC833009DB426 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BB144BE199FC834009DB426 /* ParetoSpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParetoSpeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB144C3199FC834009DB426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB144C4199FC834009DB426 /* ParetoSpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParetoSpeakTests.swift; sourceTree = "<group>"; };
+		3BC75B1819A0B14100535DF0 /* PSManagedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSManagedModel.swift; path = ../../SourceCode/PSManagedModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BB144A9199FC833009DB426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB144BB199FC834009DB426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B6FB6B5199FD14B00581BB5 /* FTPortfolio */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FB6B6199FD14B00581BB5 /* Swift+Foundation */,
+				3B6FB6B8199FD14B00581BB5 /* Swift+UIKit */,
+			);
+			name = FTPortfolio;
+			path = ../../FTPortfolioWorkingCopy/SourceCode;
+			sourceTree = "<group>";
+		};
+		3B6FB6B6199FD14B00581BB5 /* Swift+Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FB6B7199FD14B00581BB5 /* FTStringHelper.swift */,
+			);
+			path = "Swift+Foundation";
+			sourceTree = "<group>";
+		};
+		3B6FB6B8199FD14B00581BB5 /* Swift+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Swift+UIKit";
+			sourceTree = "<group>";
+		};
+		3BB144A3199FC833009DB426 = {
+			isa = PBXGroup;
+			children = (
+				3BB144AE199FC833009DB426 /* ParetoSpeak */,
+				3BB144C1199FC834009DB426 /* ParetoSpeakTests */,
+				3B6FB6B5199FD14B00581BB5 /* FTPortfolio */,
+				3BB144AD199FC833009DB426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BB144AD199FC833009DB426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BB144AC199FC833009DB426 /* ParetoSpeak.app */,
+				3BB144BE199FC834009DB426 /* ParetoSpeakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BB144AE199FC833009DB426 /* ParetoSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				3B6D2320199FC8C900FA0A8A /* PSAppDelegate.swift */,
+				3B6D2321199FC8C900FA0A8A /* PSMainVC.swift */,
+				3BC75B1819A0B14100535DF0 /* PSManagedModel.swift */,
+				3B6FB6BA199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodeld */,
+				3B6FB6BD199FDE2600581BB5 /* PSCoreData.swift */,
+				3B6D2322199FC8C900FA0A8A /* PSModel.swift */,
+				3BB144B8199FC833009DB426 /* Images.xcassets */,
+				3BB144AF199FC833009DB426 /* Supporting Files */,
+			);
+			path = ParetoSpeak;
+			sourceTree = "<group>";
+		};
+		3BB144AF199FC833009DB426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BB144B0199FC833009DB426 /* Info.plist */,
+				3B7F729419A12D520020F60D /* ParetoSpeak-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BB144C1199FC834009DB426 /* ParetoSpeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BB144C4199FC834009DB426 /* ParetoSpeakTests.swift */,
+				3BB144C2199FC834009DB426 /* Supporting Files */,
+			);
+			path = ParetoSpeakTests;
+			sourceTree = "<group>";
+		};
+		3BB144C2199FC834009DB426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BB144C3199FC834009DB426 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BB144AB199FC833009DB426 /* ParetoSpeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB144C8199FC834009DB426 /* Build configuration list for PBXNativeTarget "ParetoSpeak" */;
+			buildPhases = (
+				3BB144A8199FC833009DB426 /* Sources */,
+				3BB144A9199FC833009DB426 /* Frameworks */,
+				3BB144AA199FC833009DB426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParetoSpeak;
+			productName = ParetoSpeak;
+			productReference = 3BB144AC199FC833009DB426 /* ParetoSpeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BB144BD199FC834009DB426 /* ParetoSpeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB144CB199FC834009DB426 /* Build configuration list for PBXNativeTarget "ParetoSpeakTests" */;
+			buildPhases = (
+				3BB144BA199FC834009DB426 /* Sources */,
+				3BB144BB199FC834009DB426 /* Frameworks */,
+				3BB144BC199FC834009DB426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BB144C0199FC834009DB426 /* PBXTargetDependency */,
+			);
+			name = ParetoSpeakTests;
+			productName = ParetoSpeakTests;
+			productReference = 3BB144BE199FC834009DB426 /* ParetoSpeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BB144A4199FC833009DB426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Flowtoolz;
+				TargetAttributes = {
+					3BB144AB199FC833009DB426 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3BB144BD199FC834009DB426 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3BB144AB199FC833009DB426;
+					};
+				};
+			};
+			buildConfigurationList = 3BB144A7199FC833009DB426 /* Build configuration list for PBXProject "ParetoSpeak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BB144A3199FC833009DB426;
+			productRefGroup = 3BB144AD199FC833009DB426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BB144AB199FC833009DB426 /* ParetoSpeak */,
+				3BB144BD199FC834009DB426 /* ParetoSpeakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BB144AA199FC833009DB426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB144B9199FC833009DB426 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB144BC199FC834009DB426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BB144A8199FC833009DB426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6FB6B9199FD14B00581BB5 /* FTStringHelper.swift in Sources */,
+				3B6FB6BE199FDE2600581BB5 /* PSCoreData.swift in Sources */,
+				3BC75B1919A0B14100535DF0 /* PSManagedModel.swift in Sources */,
+				3B6D2325199FC8C900FA0A8A /* PSModel.swift in Sources */,
+				3B6FB6BC199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodeld in Sources */,
+				3B6D2324199FC8C900FA0A8A /* PSMainVC.swift in Sources */,
+				3B6D2323199FC8C900FA0A8A /* PSAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB144BA199FC834009DB426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB144C5199FC834009DB426 /* ParetoSpeakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BB144C0199FC834009DB426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BB144AB199FC833009DB426 /* ParetoSpeak */;
+			targetProxy = 3BB144BF199FC834009DB426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BB144C6199FC834009DB426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BB144C7199FC834009DB426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BB144C9199FC834009DB426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParetoSpeak-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BB144CA199FC834009DB426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ParetoSpeak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParetoSpeak-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3BB144CC199FC834009DB426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParetoSpeakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParetoSpeak.app/ParetoSpeak";
+			};
+			name = Debug;
+		};
+		3BB144CD199FC834009DB426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParetoSpeakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParetoSpeak.app/ParetoSpeak";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BB144A7199FC833009DB426 /* Build configuration list for PBXProject "ParetoSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB144C6199FC834009DB426 /* Debug */,
+				3BB144C7199FC834009DB426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB144C8199FC834009DB426 /* Build configuration list for PBXNativeTarget "ParetoSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB144C9199FC834009DB426 /* Debug */,
+				3BB144CA199FC834009DB426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB144CB199FC834009DB426 /* Build configuration list for PBXNativeTarget "ParetoSpeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB144CC199FC834009DB426 /* Debug */,
+				3BB144CD199FC834009DB426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B6FB6BA199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B6FB6BB199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodel */,
+			);
+			currentVersion = 3B6FB6BB199FD74C00581BB5 /* PSManagedObjectModel.xcdatamodel */;
+			name = PSManagedObjectModel.xcdatamodeld;
+			path = ../../SourceCode/PSManagedObjectModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3BB144A4199FC833009DB426 /* Project object */;
+}

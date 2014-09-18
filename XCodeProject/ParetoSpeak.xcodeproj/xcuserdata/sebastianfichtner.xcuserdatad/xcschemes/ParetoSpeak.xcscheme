@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BD68981199ECADA002EEF72"
-               BuildableName = "FTPortfolio.framework"
-               BlueprintName = "FTPortfolio"
+               BlueprintIdentifier = "3BB144AB199FC833009DB426"
+               BuildableName = "ParetoSpeak.app"
+               BlueprintName = "ParetoSpeak"
+               ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BB144BD199FC834009DB426"
+               BuildableName = "ParetoSpeakTests.xctest"
+               BlueprintName = "ParetoSpeakTests"
                ReferencedContainer = "container:ParetoSpeak.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +42,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BB144BD199FC834009DB426"
+               BuildableName = "ParetoSpeakTests.xctest"
+               BlueprintName = "ParetoSpeakTests"
+               ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3BB144AB199FC833009DB426"
+            BuildableName = "ParetoSpeak.app"
+            BlueprintName = "ParetoSpeak"
+            ReferencedContainer = "container:ParetoSpeak.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,15 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BD68981199ECADA002EEF72"
-            BuildableName = "FTPortfolio.framework"
-            BlueprintName = "FTPortfolio"
+            BlueprintIdentifier = "3BB144AB199FC833009DB426"
+            BuildableName = "ParetoSpeak.app"
+            BlueprintName = "ParetoSpeak"
             ReferencedContainer = "container:ParetoSpeak.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -57,15 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BD68981199ECADA002EEF72"
-            BuildableName = "FTPortfolio.framework"
-            BlueprintName = "FTPortfolio"
+            BlueprintIdentifier = "3BB144AB199FC833009DB426"
+            BuildableName = "ParetoSpeak.app"
+            BlueprintName = "ParetoSpeak"
             ReferencedContainer = "container:ParetoSpeak.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

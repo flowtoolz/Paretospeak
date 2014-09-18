@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6220.8" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PSTranslation" syncable="YES">
+        <relationship name="testResult" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PSTranslationTestResult" inverseName="translation" inverseEntity="PSTranslationTestResult" syncable="YES"/>
+    </entity>
+    <entity name="PSTranslationTestResult" representedClassName="ParetoSpeak.PSTranslationTestResult" syncable="YES">
+        <attribute name="wasSuccessful" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="translation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PSTranslation" inverseName="testResult" inverseEntity="PSTranslation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PSTranslation" positionX="-7281" positionY="-10188" width="128" height="60"/>
+        <element name="PSTranslationTestResult" positionX="-7263" positionY="-10377" width="128" height="73"/>
+    </elements>
+</model>

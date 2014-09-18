@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FTPortfolio.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>ParetoSpeak.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,22 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3BD68981199ECADA002EEF72</key>
+		<key>3BB144AB199FC833009DB426</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BD6898B199ECADA002EEF72</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3BF120C4199EC8270015D54A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3BF120D9199EC8270015D54A</key>
+		<key>3BB144BD199FC834009DB426</key>
 		<dict>
 			<key>primary</key>
 			<true/>

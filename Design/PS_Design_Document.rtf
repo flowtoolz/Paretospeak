@@ -19,6 +19,10 @@
 
 \fs28 vocabulary trainer \'85 effective, individualized, fun \'85  der vorzugsweise vokabeln abfragt die man die l\'e4ngste zeit nicht mehr richtig \'fcbersetzen konnte und die sehr n\'fctzlich sind, so dass sich das aktive vokabular des users tats\'e4chlich schnell erweitert ... au\'dferdem kann er f\'fcr die spezifischen bereiche in denen er t\'e4tig ist oder mit denen er sich befasst gezielt sein vokabular erweitern \'85\
 \
+\pard\tx566\pardeftab720
+\cf0 Auf Anfrage stell ich gern den aktuellen Stand vor und adde euch zum Trello Board des Projektes. Dort stehen auch die Features die f\'fcr die erste Iteration noch implementiert werden sollen: https://trello.com/b/VAJuP9Pc/paretospeak -> backlog -> features (gr\'fcnes label)\
+\pard\pardeftab720
+\cf0 \
 
 \b\fs48 Anforderungen beim Vokabel-Training
 \b0\fs26 \
@@ -38,10 +42,10 @@
 \f0 	}the frequency of the word in spoken language as a proxy for its universality -> relevance\
 {\listtext	
 \f1 \uc0\u10003 
-\f0 	}the word type as a proxy for the word\'92s expressiveness -> relevance (helping verbs and simple nouns are more important than adjectives and composed nouns)\
+\f0 	}the word type as a proxy for the its expressiveness -> relevance (helping verbs and simple nouns are more essential than adjectives and composed nouns)\
 {\listtext	
 \f1 \uc0\u10003 
-\f0 	}the past performance of the learner to optimize timing and progress speed (spaced repletion)\
+\f0 	}the past performance of the learner to optimize timing and progress speed (spaced repetition)\
 {\listtext	
 \f1 \uc0\u10003 
 \f0 	}the required effort to memorize the word as inferred from length, cognates, number of variants. we actually don\'92t care about the isolated relevance of a word. what counts ist the relevance/effort ratio of a word. it is the return of investment (ROI) of learning it.\
@@ -56,20 +60,21 @@
 \b0\fs26 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720
 \ls2\ilvl0
-\fs28 \cf0 {\listtext	1.	}vokabeln nach h\'e4ufigkeit ausgew\'e4hlt\
+\fs28 \cf0 {\listtext	1.	}vokabeln nach h\'e4ufigkeit in der gesprochenen Sprache sortiert\
 {\listtext	2.	}training von recall, kein hauch von multiple choice\
-{\listtext	3.	}einfache bedienung, keine tastatur, mit iphone einh\'e4ndig, einfache eingabe von sonderzeichen\
-{\listtext	4.	}schlichtes design, minimale farben, gro\'dfe schrift, keine status bar\
+{\listtext	3.	}einfache bedienung, keine tastatur, mit iphone einh\'e4ndig bedienbar, einfache eingabe von sonderzeichen\
+{\listtext	4.	}viele Vokabeln pro minute\
+{\listtext	5.	}schlichtes minimales design das die Konzentration unterst\'fctzt und keine standard-interface-element verwendet\
 \pard\tx566\pardeftab720
 
 \b \cf0 \
 
-\fs48 Potentielle (zuk\'fcnftige) Features
-\fs28 \
+\fs48 Potentielle (zuk\'fcnftige) Features\
+
+\b0\fs28 Die stehen nicht im Trello und gehen \'fcber das \'94Minimal Viable Product\'94 (MVP) hinaus:\
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls3\ilvl0
-\b0 \cf0 {\listtext	1.	}Geschlecht, plural/singular und personenformen (Beugungen) mit ins Modell einbeziehen und entsprechend auch kleine Wortgruppen abfragen wie z. bsp. Artikel + Substantiv oder damit hinweise eingeblendet werden k\'f6nnen wie die frage gemeint ist z.bsp \'94the (feminine)\'93\
-{\listtext	2.	}anbieten themen- und sparchspezifischer \'84language packs\'93\
+\ls3\ilvl0\cf0 {\listtext	1.	}Geschlecht, plural/singular, personenformen und dergleichen mit ins Modell einbeziehen und entsprechend auch kleine Wortgruppen abfragen wie z. bsp. Artikel + Substantiv oder damit hinweise eingeblendet werden k\'f6nnen wie die frage gemeint ist z.bsp \'94the (feminine)\'93\
+{\listtext	2.	}anbieten themen- und sparchspezifischer \'84language packs\'93, vorschlagen von themenpacks in Abh\'e4ngigkeit der Vokabel die der user selbst hinzugef\'fcgt hat\'85 noch besser: zusammenstellen komplett individueller themenpacks: per algorithmus die verwandten raussuchen\
 {\listtext	3.	}wie bei stackoverflow W\'f6rter einsprechen lassen, upvoten\'85 user h\'f6rt automatisch beste L\'f6sung...  (live mocha?)\
 {\listtext	4.	}die ganze community Geschichte ;)\
 \pard\tx566\pardeftab720
@@ -85,7 +90,44 @@
 {\listtext	2.	}write, translate and practice your own bio\
 {\listtext	3.	}Use the new language to learn an interesting subject matter\
 {\listtext	4.	}Speak as early and often as possible\
-{\listtext	5.	}Deconstruct the grammar by translating these 12 sentences:\
+{\listtext	5.	}listen to the language through radio stations, podcasts or documentaries\
+{\listtext	6.	}Create and practice a list of sentences and words that might be useful in smalltalk with strangers, or in the scenario where talking the new language will likely be required:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls4\ilvl1\cf0 {\listtext	
+\f1 \uc0\u10003 
+\f0 	}I do not speak portuguese very well.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}I speak german and english.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}Do you know the way to X?\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}I come from germany.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}Thank you for your help.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}You are very kind.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}I am heading to X.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}Sorry, I didn\'92t understand.\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}What does this cost?\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}May I use the toilet?\
+{\listtext	
+\f1 \uc0\u10003 
+\f0 	}\'85\
+\pard\tx220\tx720\tx1133\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 {\listtext	7.	}Deconstruct the grammar by translating these 12 sentences:\
 \pard\tx940\tx1440\pardeftab720\li1440\fi-1440
 \ls4\ilvl1\cf0 {\listtext	
 \f1 \uc0\u10003 
@@ -122,6 +164,10 @@
 \f0 	}I'm going to know tomorrow. 		\'97\'a0Vou saber amanh\'e3.\
 {\listtext	
 \f1 \uc0\u10003 
-\f0 	}I can't eat the apple. 			\'97\'a0Eu n\'e3o posso comer a ma\'e7\'e3.
+\f0 	}I can't eat the apple. 			\'97\'a0Eu n\'e3o posso comer a ma\'e7\'e3.\
+\pard\tx220\tx720\tx1133\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 {\listtext	8.	}summarize the important grammar on one page: verb conjugation, noun declination, sentence structures\
+{\listtext	9.	}learn the most important helper verbs\
+{\listtext	10.	}write down the most important irregular verbs
 \b \
 }
