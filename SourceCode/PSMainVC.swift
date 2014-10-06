@@ -80,9 +80,9 @@ class PSMainVC: UIViewController, UITextFieldDelegate
             answerField!.font = UIFont.systemFontOfSize(bigFontSize)
         }
         
-        answerField?.text = answerField!.text + button!.titleLabel.text
+        answerField!.text = answerField!.text + button!.titleLabel!.text!
         
-        model!.currentAnswer += button!.titleLabel.text
+        model!.currentAnswer += button!.titleLabel!.text!
         
         if model!.possibleTranslationsForCurrentAnswer().isEmpty
         {
@@ -218,7 +218,7 @@ func createAnswerButtons() -> [UIButton]
             var button = UIButton(frame: buttonFrame)
             button.setTitle("\(x + 3 * y)", forState: UIControlState.Normal)
             button.backgroundColor = UIColor.lightGrayColor()
-            button.titleLabel.font = UIFont.systemFontOfSize(bigFontSize)
+            button.titleLabel!.font = UIFont.systemFontOfSize(bigFontSize)
             
             buttons.append(button)
         }
@@ -235,7 +235,7 @@ func createNextButton() -> UIButton
     var button = UIButton(frame: buttonFrame)
     button.setTitle("Next Word", forState: UIControlState.Normal)
     button.backgroundColor = UIColor.lightGrayColor()
-    button.titleLabel.font = UIFont.systemFontOfSize(bigFontSize)
+    button.titleLabel!.font = UIFont.systemFontOfSize(bigFontSize)
     
     return button
 }

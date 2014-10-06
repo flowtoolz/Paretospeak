@@ -68,7 +68,7 @@ class PSAppDelegate: UIResponder, UIApplicationDelegate
             return
         }
         
-        for result in results
+        for result in results!
         {
             let testResult = result as PSTranslationTestResult
             
