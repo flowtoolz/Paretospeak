@@ -55,7 +55,7 @@ class PSCoreData
     {
         let new_model = NSManagedObjectModel.mergedModelFromBundles(nil)
         assert(new_model != nil, "error: object model cannot be created")
-        return new_model
+        return new_model!
     }
 }
 

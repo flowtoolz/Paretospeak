@@ -5,10 +5,13 @@ class PSModel
 {
     // MARK: properties
     
+    // linguistic facts
     var english = PSLanguage(name: "English")
     var portuguese = PSLanguage(name: "Portuguese")
     var dictionaryEnPt = PSDictionary()
     var dictionaryPtEn = PSDictionary()
+    
+    // workout
     var currentQuestion = ""
     var currentAnswer = ""
     
@@ -21,16 +24,23 @@ class PSModel
             println("error: question cannot be selected because of lacking terms")
             return
         }
-        
+    
+        var entry = getNextTestEntry()
+        var index = random() % entry!.translations.count
+        currentQuestion = entry!.translations[index].word
         currentAnswer = ""
-        
+    }
+    
+    func getNextTestEntry() -> PSDictionaryEntry?
+    {
         // find the next testword with a valid dictionary entry
+        
+        var entry: PSDictionaryEntry?
+        
         struct staticData
         {
             static var nextIndex = 0
         }
-        
-        var entry: PSDictionaryEntry?
         
         while entry == nil
         {
@@ -38,9 +48,8 @@ class PSModel
             entry = dictionaryPtEn.dictionary[testWord]
             staticData.nextIndex = (staticData.nextIndex + 1) % portuguese.terms.count
         }
-    
-        var index = random() % entry!.translations.count
-        currentQuestion = entry!.translations[index].word
+        
+        return entry
     }
     
     func stringOfCorrectAnswers() -> String

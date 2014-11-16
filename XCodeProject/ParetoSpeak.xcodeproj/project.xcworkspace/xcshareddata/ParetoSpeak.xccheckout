@@ -10,15 +10,19 @@
 	<string>ParetoSpeak</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>452312DC4C931AC98EBDCD2A567E61A4ECB36377</key>
+		<string>https://bitbucket.org/flowtoolz/ftportfolio.git</string>
 		<key>5C8CDE4B6DA40A42F13E072FAC3382FCFB351120</key>
 		<string>https://bitbucket.org/flowtoolz/paretospeak.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Implementation/ParetoSpeak/ParetoSpeak.xcodeproj</string>
+	<string>XCodeProject/ParetoSpeak.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>452312DC4C931AC98EBDCD2A567E61A4ECB36377</key>
+		<string>../../../../FTPortfolioWorkingCopy</string>
 		<key>5C8CDE4B6DA40A42F13E072FAC3382FCFB351120</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/flowtoolz/paretospeak.git</string>
@@ -28,6 +32,14 @@
 	<string>5C8CDE4B6DA40A42F13E072FAC3382FCFB351120</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>452312DC4C931AC98EBDCD2A567E61A4ECB36377</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FTPortfolioWorkingCopy</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
